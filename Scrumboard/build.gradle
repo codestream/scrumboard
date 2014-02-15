@@ -23,4 +23,5 @@ android {
 }
 
 dependencies {
+    compile 'com.squareup.dagger:dagger:1.2.0'
 }
