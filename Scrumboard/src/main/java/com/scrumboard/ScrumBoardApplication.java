@@ -2,6 +2,9 @@ package com.scrumboard;
 
 import android.app.Application;
 
+/**
+ * Created by 1 on 15.02.14.
+ */
 public class ScrumBoardApplication extends Application {
 
     /**
@@ -16,7 +19,5 @@ public class ScrumBoardApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
-
     }
 }
