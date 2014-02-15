@@ -24,4 +24,6 @@ android {
 
 dependencies {
     compile 'com.squareup.dagger:dagger:1.2.0'
+    compile 'com.jakewharton:butterknife:4.0.1'
+    compile 'de.greenrobot:eventbus:2.0.+'
 }
