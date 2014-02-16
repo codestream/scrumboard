@@ -2,13 +2,6 @@ package com.scrumboard;
 
 import android.app.Application;
 
-import com.scrumboard.models.modules.NavigationDrawerItem;
-import com.scrumboard.ui.adapter.NavigationDrawerAdapter;
-import com.scrumboard.util.Injector;
-
-/**
- * Created by 1 on 15.02.14.
- */
 public class ScrumBoardApplication extends Application {
 
     /**
@@ -23,12 +16,5 @@ public class ScrumBoardApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
-        Object[] modules = new Object[]{
-                new NavigationDrawerItem(),
-                new NavigationDrawerAdapter()
-        };
-
-        Injector.inject(modules);
     }
 }

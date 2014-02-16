@@ -1,8 +1,5 @@
 package com.scrumboard.models.modules;
 
-import dagger.Module;
-
-@Module(complete = false, library = true)
 public class NavigationDrawerItem {
 
     private String mDrawerItemTitle;
@@ -13,12 +10,16 @@ public class NavigationDrawerItem {
 
     public NavigationDrawerItem(){}
 
-    public NavigationDrawerItem(String mDrawerItemTitle, int mDrawerItemIcon, String mCount,
-                                boolean isCounterVisible) {
-        this.mDrawerItemTitle = mDrawerItemTitle;
-        this.mDrawerItemIcon = mDrawerItemIcon;
-        this.mCount = mCount;
+    public NavigationDrawerItem(String title, int icon, boolean isCounterVisible, String count){
+        this.mDrawerItemTitle = title;
+        this.mDrawerItemIcon = icon;
         this.isCounterVisible = isCounterVisible;
+        this.mCount = count;
+    }
+
+    public NavigationDrawerItem(String title, int icon){
+        this.mDrawerItemTitle = title;
+        this.mDrawerItemIcon = icon;
     }
 
     public String getDrawerItemTitle() {
